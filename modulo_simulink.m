@@ -25,16 +25,15 @@ end
 %anterior y se guarda su salida
 
 try 
-    
+    salida = sim(in);    
 catch ME
-    if (strcmp(ME.identifier, 'MATLAB:MException:MultipleErrors'))
-        msg = ['Faltan parametros :',parametros];
-        causeException = MException('MATLAB:modelo_simulink:MissingArgs',msg);
-        ME = addCause(ME,causeException);        
-    end
+    msg = ['No se han cubierto todos los parametros del modelo : ',nombre_modelo];
+    causeException = MException('MATLAB:modelo_simulink:MissingArgs',msg);
+    ME = addCause(ME,causeException);        
+    
     rethrow(ME);
 end
-salida = sim(in);
+
 
 
 yout = salida.get('yout');
@@ -46,7 +45,7 @@ yout = salida.get('yout');
 analisis_time = yout{1}.Values.Time;
 
 analisis_data = yout{1}.Values.Data;
-if (size(analisis_data,1) > 1 && size(analisis_data,2) > 1)
+if (size(analisis_data,1) > 1 && size(analisis_data,2) ~= 0)
     plot(analisis_time,analisis_data);
     hold on;
     grid on;
@@ -54,7 +53,6 @@ if (size(analisis_data,1) > 1 && size(analisis_data,2) > 1)
     ylabel('datos');    
 else
     analisis_time = 0;
-    disp('valor escalar');
 end
 
 end

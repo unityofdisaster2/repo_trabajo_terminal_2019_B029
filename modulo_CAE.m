@@ -21,6 +21,9 @@ catch ME
     disp('ya existe un estudio. Se ejecutara con los nuevos parametros');
     std = modelo.study('std1');
 end
+
+modelo.mesh('mesh1').run();
+
 std.run;
 
 
