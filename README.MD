@@ -158,7 +158,11 @@ servidorMatlab();
 
 
 
+# To-do
 
+* Add more use cases for analysis module.
+* Create an aditional module to connect values with Matlab local functions instead of limiting it to Simulink models.
+* Find the possibility of returning graphs to the frontend instead of just numerical values.
 
 
 
