@@ -29,7 +29,7 @@ Clone or copy the content of this repository inside the default user work folder
 
 # Usage
 
-If it is required, some of the modules can be used individually to test them or integrate into another project. 
+If it is required, some of the modules can be used individually to test them or integrate into another project.  
 
 ### modulo_CAD
 
@@ -37,9 +37,7 @@ For individual usage of the module tagged as "modulo_CAD" you need to have Solid
 
 ​											 ![](https://i.imgur.com/jeMjhI3.png) 
 
-<center>Cube model with an inicial side value of 100</center>
-
-
+Cube model with an inicial side value of 100.  
 
 To modify the value of global variables it's necessary to create a cell array of n*2 where n define the number of variables we want to update. Every entry has to be put as a pair of values composed of a string that defines a name and a number defining the new value. Below is an example using the side of the cube:
 
@@ -64,9 +62,7 @@ Originally "dimension" has a value of 100; if there aren't errors found during t
 
 ![](https://i.imgur.com/q6aZt2g.png)
 
-<center>cube geometry after the execution</center>
-
-
+cube geometry after execution.  
 
 ### modulo_simulink 
 
@@ -74,9 +70,7 @@ For individual usage of the module tagged as "modulo_simulink" it is necessary t
 
 ![](https://i.imgur.com/vk3AipY.png)
 
-<center>Example model in Simulink that represents the differential equation of a simple pendulum.</center>
-
-
+Example model in Simulink that represents the differential equation of a simple pendulum.  
 
 As you could see, the blocks that depend on Matlab variables are shown in red color because they are not defined yet. To give this variables a value it is necessary to create a cell array of n*2 where n define the number of variables where we want to inject a value. Every entry of the array has to be put as a pair of values composed of a string that defines a name and a number defining the new value. Below is an example code where some numeric values are injected to a Simulink model to calculate a differential equation:
 
@@ -120,9 +114,7 @@ If there aren't any errors during execution this module can return two kinds of 
 
 ![](https://i.imgur.com/xoBCu1o.png)
 
-<center>plot showing the behavior of the pendulum with the given values.</center>
-
-
+plot showing the behavior of the pendulum with the given values.  
 
 ### modulo_CAE
 
@@ -146,7 +138,7 @@ As a result of the execution, two plots are shown to the user (that are shown do
 
 ![](https://i.imgur.com/DFyHp5S.png)
 
-<center>Maximum deformation over the spring with the given force.</center>
+Maximum deformation over the spring with the given force.  
 
 
 
@@ -154,7 +146,7 @@ As a result of the execution, two plots are shown to the user (that are shown do
 
 ![](https://i.imgur.com/Wpktv6Q.png)
 
-<center>Maximum pressure over the spring with the given force.</center>
+Maximum pressure over the spring with the given force.  
 
 
 
