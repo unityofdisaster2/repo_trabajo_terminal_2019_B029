@@ -39,6 +39,8 @@ For individual usage of the module tagged as "modulo_CAD" you need to have Solid
 
 <center>Cube model with an inicial side value of 100</center>
 
+
+
 To modify the value of global variables it's necessary to create a cell array of n*2 where n define the number of variables we want to update. Every entry has to be put as a pair of values composed of a string that defines a name and a number defining the new value. Below is an example using the side of the cube:
 
 ```matlab
@@ -72,7 +74,9 @@ For individual usage of the module tagged as "modulo_simulink" it is necessary t
 
 ![](https://i.imgur.com/vk3AipY.png)
 
-<center>Example model in Simulink that represents the differential equation of a simple pendulum</center>
+<center>Example model in Simulink that represents the differential equation of a simple pendulum.</center>
+
+
 
 As you could see, the blocks that depend on Matlab variables are shown in red color because they are not defined yet. To give this variables a value it is necessary to create a cell array of n*2 where n define the number of variables where we want to inject a value. Every entry of the array has to be put as a pair of values composed of a string that defines a name and a number defining the new value. Below is an example code where some numeric values are injected to a Simulink model to calculate a differential equation:
 
@@ -116,7 +120,9 @@ If there aren't any errors during execution this module can return two kinds of 
 
 ![](https://i.imgur.com/xoBCu1o.png)
 
-<center>plot showing the behavior of the pendulum with the given values</center>
+<center>plot showing the behavior of the pendulum with the given values.</center>
+
+
 
 ### modulo_CAE
 
@@ -140,13 +146,17 @@ As a result of the execution, two plots are shown to the user (that are shown do
 
 ![](https://i.imgur.com/DFyHp5S.png)
 
-<center>Maximum deformation over the spring with the given force</center>
+<center>Maximum deformation over the spring with the given force.</center>
+
+
 
 
 
 ![](https://i.imgur.com/Wpktv6Q.png)
 
-<center>Maximum pressure over the spring with the given force</center>
+<center>Maximum pressure over the spring with the given force.</center>
+
+
 
 ### Usage with the web application integration
 
