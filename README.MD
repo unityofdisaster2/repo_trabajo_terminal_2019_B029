@@ -1,6 +1,6 @@
 
 
-# interpretation and integration system for graphical language to a MBSE workflow 
+# Interpretation and Integration System from a Graphical Modeling Language To a MBSE Workflow 
 
 This repository contains a collection of modules that connects either individually with models made in third party engineering tools via Matlab to automate testing tasks, or together into a system that interacts with the repository hosted in [unityofdisaster2/frontend-diagramas (github.com)][1] to receive an object with metadata which represents the content of a graphical diagram made with a modeling language. The enginnering tools suported are the following:
 
